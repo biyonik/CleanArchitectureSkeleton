@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "CD3xwP0eK/FX5weiSWJrtUrxcmyOC1m1K1L8dWrl/kBEyA8VDSav0KpUT4wtOjqns9prMr2xqIfLscYV80BTMA==",
+  "dgSpecHash": "oImCP1Sqmpy1glSdf62ZejV46ye4KaLRdySWq79L4+tC0I/aLpYDOoH37NHs+7+9GrJ6FPcJRPUTllo7ZiagFA==",
   "success": true,
   "projectFilePath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\CleanArchitectureSkeleton.WebAPI\\CleanArchitectureSkeleton.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmet\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512",
+    "C:\\Users\\ahmet\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.7.1\\fluentvalidation.dependencyinjectionextensions.11.7.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

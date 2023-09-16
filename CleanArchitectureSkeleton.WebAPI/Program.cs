@@ -1,9 +1,12 @@
 using CleanArchitectureSkeleton.Application;
+using CleanArchitectureSkeleton.Application.Behaviors;
 using CleanArchitectureSkeleton.Application.Services;
 using CleanArchitectureSkeleton.Persistence;
 using CleanArchitectureSkeleton.Persistence.Contexts;
 using CleanArchitectureSkeleton.Persistence.Services;
 using CleanArchitectureSkeleton.Presentation;
+using FluentValidation;
+using MediatR;
 using static System.AppContext;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +26,9 @@ builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyReference).Assembly);
 });
+
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+builder.Services.AddValidatorsFromAssembly(typeof(ApplicationAssemblyReference).Assembly);
 
 // Add AutoMapper to the API Layer
 builder.Services.AddAutoMapper(typeof(PersistenceAssemblyReference).Assembly);

@@ -19,7 +19,7 @@ public class CarManager: ICarService
 
     public async Task<bool> AddAsync(Create.Command carCommand, CancellationToken cancellationToken = default)
     {
-        Car car = _mapper.Map<Car>(carCommand.AddForCarDto);
+        Car car = _mapper.Map<Car>(carCommand);
         await _context.Set<Car>().AddAsync(car, cancellationToken);
         return await _context.SaveChangesAsync(cancellationToken) > 0;
     }

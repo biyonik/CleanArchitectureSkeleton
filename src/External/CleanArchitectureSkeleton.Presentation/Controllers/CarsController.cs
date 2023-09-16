@@ -8,9 +8,8 @@ namespace CleanArchitectureSkeleton.Presentation.Controllers;
 public sealed class CarsController: BaseApiController
 {
     [HttpPost]
-    public async Task<IActionResult> Create(AddForCarDto addForCarDto, CancellationToken cancellationToken)
+    public async Task<IActionResult> Create(Create.Command command, CancellationToken cancellationToken)
     {
-        Create.Command command = new Create.Command(addForCarDto);
         var mediatr = await Mediator.Send(command, cancellationToken);
         return HandleResult(mediatr);
     }

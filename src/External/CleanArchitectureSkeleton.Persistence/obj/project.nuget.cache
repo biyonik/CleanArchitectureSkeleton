@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RRU/Ixl5O+eY9vIaYNfYEIKpm3WFBpwcISU2NeRzp9+hKGcdz/ODP4c1KEY5NlR+U60NaADIwhilNdb96qi1iA==",
+  "dgSpecHash": "lsCI38NRDV2BqEuBg4BhRdY4izLejQWSXDaq/NxBLu+TCY1tk0aql8kZ6sBIfTZenpLAsG4LVv8BN/C+uY18sg==",
   "success": true,
   "projectFilePath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\External\\CleanArchitectureSkeleton.Persistence\\CleanArchitectureSkeleton.Persistence.csproj",
   "expectedPackageFiles": [

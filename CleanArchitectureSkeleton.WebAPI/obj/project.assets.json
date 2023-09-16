@@ -1020,10 +1020,21 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "CleanArchitectureSkeleton.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CleanArchitectureSkeleton.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitectureSkeleton.Domain.dll": {}
+        }
+      },
       "CleanArchitectureSkeleton.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "CleanArchitectureSkeleton.Domain": "1.0.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Binder": "7.0.4",
           "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
@@ -2541,6 +2552,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CleanArchitectureSkeleton.Domain/1.0.0": {
+      "type": "project",
+      "path": "../src/Core/CleanArchitectureSkeleton.Domain/CleanArchitectureSkeleton.Domain.csproj",
+      "msbuildProject": "../src/Core/CleanArchitectureSkeleton.Domain/CleanArchitectureSkeleton.Domain.csproj"
     },
     "CleanArchitectureSkeleton.Persistence/1.0.0": {
       "type": "project",

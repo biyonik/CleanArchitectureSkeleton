@@ -1,8 +1,8 @@
 ﻿using System.Reflection;
 
-namespace CleanArchitectureSkeleton.Presentation;
+namespace CleanArchitectureSkeleton.Persistence;
 
-public static class PresentationAssemblyReference
+public static class PersistenceAssemblyReference
 {
     public static readonly Assembly Assembly = typeof(Assembly).Assembly;
 }

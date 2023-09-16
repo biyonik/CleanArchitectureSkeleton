@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "chcnbORlD2ZLWJCfOTPNusbJhLfRTbd2688daydb6rArRz1oHXoDYfgtDEdw5ljfEUqPTRpU4a4lrK6+1v+GHA==",
+  "dgSpecHash": "5P120QCmo9WXTArUQxZG0Tj+oPG7AWb0VcAMPLtqmY3ZTa+PSXpd32sDgtjFz4crZBzfge4pw+HRDysxX06gIQ==",
   "success": true,
   "projectFilePath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\CleanArchitectureSkeleton.WebAPI\\CleanArchitectureSkeleton.WebAPI.csproj",
   "expectedPackageFiles": [

@@ -540,6 +540,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "CleanArchitectureSkeleton.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CleanArchitectureSkeleton.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitectureSkeleton.Domain.dll": {}
+        }
       }
     }
   },
@@ -1349,10 +1359,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "CleanArchitectureSkeleton.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Core/CleanArchitectureSkeleton.Domain/CleanArchitectureSkeleton.Domain.csproj",
+      "msbuildProject": "../../Core/CleanArchitectureSkeleton.Domain/CleanArchitectureSkeleton.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CleanArchitectureSkeleton.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.11",
       "Microsoft.Extensions.Configuration >= 7.0.0",
@@ -1397,7 +1413,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj": {
+              "projectPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

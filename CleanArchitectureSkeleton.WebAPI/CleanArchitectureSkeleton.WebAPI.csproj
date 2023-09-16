@@ -15,4 +15,8 @@
       <Folder Include="Controllers\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\src\External\CleanArchitectureSkeleton.Presentation\CleanArchitectureSkeleton.Presentation.csproj" />
+    </ItemGroup>
+
 </Project>

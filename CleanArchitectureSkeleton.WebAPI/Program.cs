@@ -5,6 +5,7 @@ using CleanArchitectureSkeleton.Persistence;
 using CleanArchitectureSkeleton.Persistence.Contexts;
 using CleanArchitectureSkeleton.Persistence.Services;
 using CleanArchitectureSkeleton.Presentation;
+using CleanArchitectureSkeleton.WebAPI.Middlewares;
 using FluentValidation;
 using MediatR;
 using static System.AppContext;
@@ -36,6 +37,9 @@ builder.Services.AddAutoMapper(typeof(PersistenceAssemblyReference).Assembly);
 // Add Services to the API Layer (Dependency Injection)
 builder.Services.AddScoped<ICarService, CarManager>();
 
+// Add Middlewares to the API Layer (Dependency Injection)
+builder.Services.AddTransient<ExceptionMiddleware>();
+
 // Add Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -47,6 +51,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseExceptionMiddleware();
 
 app.UseHttpsRedirection();
 

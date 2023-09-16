@@ -1,3 +1,4 @@
+using CleanArchitectureSkeleton.Application;
 using CleanArchitectureSkeleton.Persistence.Contexts;
 using CleanArchitectureSkeleton.Presentation;
 
@@ -11,6 +12,12 @@ builder.Services.AddControllers()
     );
 // Add DbContext to the API Layer
 builder.Services.AddDbContext<AppDbContext>();
+
+// Add MediatR to the API Layer
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyReference).Assembly);
+});
 
 // Add Swagger
 builder.Services.AddEndpointsApiExplorer();

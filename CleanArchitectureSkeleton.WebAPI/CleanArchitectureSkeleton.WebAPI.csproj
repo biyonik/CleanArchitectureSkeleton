@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.1.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
           <PrivateAssets>all</PrivateAssets>
@@ -20,6 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\src\Core\CleanArchitectureSkeleton.Application\CleanArchitectureSkeleton.Application.csproj" />
       <ProjectReference Include="..\src\External\CleanArchitectureSkeleton.Persistence\CleanArchitectureSkeleton.Persistence.csproj" />
       <ProjectReference Include="..\src\External\CleanArchitectureSkeleton.Presentation\CleanArchitectureSkeleton.Presentation.csproj" />
     </ItemGroup>

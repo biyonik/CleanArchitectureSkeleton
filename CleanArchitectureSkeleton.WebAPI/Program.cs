@@ -1,5 +1,6 @@
 using CleanArchitectureSkeleton.Application;
 using CleanArchitectureSkeleton.Application.Services;
+using CleanArchitectureSkeleton.Persistence;
 using CleanArchitectureSkeleton.Persistence.Contexts;
 using CleanArchitectureSkeleton.Persistence.Services;
 using CleanArchitectureSkeleton.Presentation;
@@ -22,6 +23,9 @@ builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyReference).Assembly);
 });
+
+// Add AutoMapper to the API Layer
+builder.Services.AddAutoMapper(typeof(PersistenceAssemblyReference).Assembly);
 
 // Add Services to the API Layer (Dependency Injection)
 builder.Services.AddScoped<ICarService, CarManager>();

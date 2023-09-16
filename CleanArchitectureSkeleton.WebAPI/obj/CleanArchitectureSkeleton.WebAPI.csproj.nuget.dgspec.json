@@ -57,6 +57,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.1.1, )"
@@ -287,6 +295,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -370,7 +382,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj": {
+                "projectPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

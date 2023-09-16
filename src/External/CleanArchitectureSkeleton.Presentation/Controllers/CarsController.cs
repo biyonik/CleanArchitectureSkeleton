@@ -1,5 +1,4 @@
 ﻿using CleanArchitectureSkeleton.Application.Features.CarFeatures.Commands;
-using CleanArchitectureSkeleton.Application.Features.CarFeatures.DTOs;
 using CleanArchitectureSkeleton.Presentation.Controllers.Abstraction;
 using Microsoft.AspNetCore.Mvc;
 

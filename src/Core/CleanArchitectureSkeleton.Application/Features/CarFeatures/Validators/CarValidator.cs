@@ -1,7 +1,7 @@
 ﻿using CleanArchitectureSkeleton.Application.Features.CarFeatures.Commands;
 using FluentValidation;
 
-namespace CleanArchitectureSkeleton.Application.Validators;
+namespace CleanArchitectureSkeleton.Application.Features.CarFeatures.Validators;
 
 public class CarValidator : AbstractValidator<Create.Command>
 {

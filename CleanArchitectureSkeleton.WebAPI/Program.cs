@@ -1,6 +1,7 @@
 using CleanArchitectureSkeleton.Application;
 using CleanArchitectureSkeleton.Persistence.Contexts;
 using CleanArchitectureSkeleton.Presentation;
+using static System.AppContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddControllers()
     );
 // Add DbContext to the API Layer
 builder.Services.AddDbContext<AppDbContext>();
+SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 // Add MediatR to the API Layer
 builder.Services.AddMediatR(cfg =>

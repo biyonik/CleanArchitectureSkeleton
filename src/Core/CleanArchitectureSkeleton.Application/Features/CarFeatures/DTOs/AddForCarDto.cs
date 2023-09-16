@@ -1,4 +1,4 @@
-﻿namespace CleanArchitectureSkeleton.Domain.DTOs.Car;
+﻿namespace CleanArchitectureSkeleton.Application.Features.CarFeatures.DTOs;
 
 public class AddForCarDto
 {

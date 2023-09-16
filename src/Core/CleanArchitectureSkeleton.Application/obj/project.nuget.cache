@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i0/llTXBZNmsXnX2/z4aeDFJK3fFhjLFayjd9nd66Hn9h0qr8fd+MC7boqm6rWR8sy/1cETuHnMwbDaATyCzpg==",
+  "dgSpecHash": "VtqAb676JEDfx8S9l48Poq4sqvBqTS2msANWAuzErtSVaJW3dQqCiEAaVgPb7eqZTiaO8WO/VdTAyZe+yQ7mIQ==",
   "success": true,
   "projectFilePath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ahmet\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"

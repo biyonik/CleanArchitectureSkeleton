@@ -268,6 +268,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj": {
+                "projectPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj"
+              },
               "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj": {
                 "projectPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj"
               }

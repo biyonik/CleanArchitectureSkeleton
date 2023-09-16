@@ -1092,6 +1092,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "CleanArchitectureSkeleton.Application": "1.0.0",
           "CleanArchitectureSkeleton.Domain": "1.0.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Binder": "7.0.4",

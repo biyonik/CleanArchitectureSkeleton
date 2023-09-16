@@ -1,5 +1,7 @@
 using CleanArchitectureSkeleton.Application;
+using CleanArchitectureSkeleton.Application.Services;
 using CleanArchitectureSkeleton.Persistence.Contexts;
+using CleanArchitectureSkeleton.Persistence.Services;
 using CleanArchitectureSkeleton.Presentation;
 using static System.AppContext;
 
@@ -20,6 +22,9 @@ builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(ApplicationAssemblyReference).Assembly);
 });
+
+// Add Services to the API Layer (Dependency Injection)
+builder.Services.AddScoped<ICarService, CarManager>();
 
 // Add Swagger
 builder.Services.AddEndpointsApiExplorer();

@@ -23,6 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Core\CleanArchitectureSkeleton.Application\CleanArchitectureSkeleton.Application.csproj" />
       <ProjectReference Include="..\..\Core\CleanArchitectureSkeleton.Domain\CleanArchitectureSkeleton.Domain.csproj" />
     </ItemGroup>
 

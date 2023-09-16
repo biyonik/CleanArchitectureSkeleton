@@ -4,6 +4,82 @@
     "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\External\\CleanArchitectureSkeleton.Persistence\\CleanArchitectureSkeleton.Persistence.csproj": {}
   },
   "projects": {
+    "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj",
+        "projectName": "CleanArchitectureSkeleton.Application",
+        "projectPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj",
+        "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
+        "outputPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj": {
+                "projectPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -97,6 +173,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj": {
+                "projectPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Application\\CleanArchitectureSkeleton.Application.csproj"
+              },
               "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj": {
                 "projectPath": "I:\\Projects\\NetCore\\CleanArchitectureSkeleton\\src\\Core\\CleanArchitectureSkeleton.Domain\\CleanArchitectureSkeleton.Domain.csproj"
               }

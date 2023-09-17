@@ -12,10 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Features\CarFeatures\Queries\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\CleanArchitectureSkeleton.Domain\CleanArchitectureSkeleton.Domain.csproj" />
     </ItemGroup>
 

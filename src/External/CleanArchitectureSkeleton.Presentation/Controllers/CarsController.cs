@@ -1,5 +1,7 @@
 ﻿using CleanArchitectureSkeleton.Application.Core.Result.Abstract;
 using CleanArchitectureSkeleton.Application.Features.CarFeatures.Commands;
+using CleanArchitectureSkeleton.Application.Features.CarFeatures.Queries;
+using CleanArchitectureSkeleton.Domain.Entities;
 using CleanArchitectureSkeleton.Presentation.Controllers.Abstraction;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +13,13 @@ public sealed class CarsController: BaseApiController
     public async Task<IActionResult> Create(Create.Command command, CancellationToken cancellationToken)
     {
         IResult mediatr = await Mediator.Send(command, cancellationToken);
+        return HandleResult(mediatr);
+    }
+    
+    [HttpGet]
+    public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
+    {
+        IDataResult<IEnumerable<Car>> mediatr = await Mediator.Send(new GetAll.Query(), cancellationToken);
         return HandleResult(mediatr);
     }
 }

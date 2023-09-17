@@ -26,10 +26,8 @@ public sealed class Create
 
         public async Task<IResult> Handle(Command request, CancellationToken cancellationToken)
         {
-            var result = await _carService.AddAsync(request, cancellationToken);
-            return !result 
-                ? new ErrorResult(CarMessageConstants.AddError)
-                : new SuccessResult(CarMessageConstants.AddSuccess);
+            await _carService.AddAsync(request, cancellationToken);
+            return new SuccessResult(CarMessageConstants.AddSuccess);
         }
     }
 }

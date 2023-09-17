@@ -1,4 +1,5 @@
-﻿using CleanArchitectureSkeleton.Application.Features.CarFeatures.Commands;
+﻿using CleanArchitectureSkeleton.Application.Core.Result.Abstract;
+using CleanArchitectureSkeleton.Application.Features.CarFeatures.Commands;
 using CleanArchitectureSkeleton.Presentation.Controllers.Abstraction;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +10,7 @@ public sealed class CarsController: BaseApiController
     [HttpPost]
     public async Task<IActionResult> Create(Create.Command command, CancellationToken cancellationToken)
     {
-        var mediatr = await Mediator.Send(command, cancellationToken);
+        IResult mediatr = await Mediator.Send(command, cancellationToken);
         return HandleResult(mediatr);
     }
 }

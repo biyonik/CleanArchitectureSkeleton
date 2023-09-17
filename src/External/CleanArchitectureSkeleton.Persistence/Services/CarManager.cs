@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
-using CleanArchitectureSkeleton.Application.Core.Result.Abstract;
 using CleanArchitectureSkeleton.Application.Features.CarFeatures.Commands;
+using CleanArchitectureSkeleton.Application.Features.CarFeatures.Queries;
 using CleanArchitectureSkeleton.Application.Services;
 using CleanArchitectureSkeleton.Domain.Entities;
 using CleanArchitectureSkeleton.Domain.Repositories;
+using EntityFrameworkCorePagination.Nuget.Pagination;
 using GenericRepository;
 
 namespace CleanArchitectureSkeleton.Persistence.Services;
@@ -27,9 +28,12 @@ public class CarManager: ICarService
         await _carRepository.AddAsync(car, cancellationToken);
         await _unitOfWork.SaveChangesAsync(cancellationToken);
     }
-
-    public async Task<IQueryable<Car>> GetAll(CancellationToken cancellationToken = default)
+    
+    public async Task<PaginationResult<Car>> GetAll(GetAll.Query request,CancellationToken cancellationToken = default)
     {
-        return _carRepository.GetAll();
+        return await _carRepository
+            .GetWhere(x => x.Name.Contains(request.search ?? string.Empty))
+            .OrderBy(x => x.Name)
+            .ToPagedListAsync(request.PageNumber, request.PageSize, cancellationToken);
     }
 }

@@ -10,6 +10,8 @@ public class CarConfiguration: IEntityTypeConfiguration<Car>
     {
         builder.ToTable("Cars");
         builder.HasKey(x => x.Id);
+        builder.HasIndex(p => p.Name);
+        builder.Property(x => x.Name).HasMaxLength(100);
         builder.Property(x => x.Model).HasMaxLength(100);
         builder.Property(x => x.HorsePower).HasMaxLength(100);
     }
